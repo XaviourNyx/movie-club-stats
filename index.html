@@ -6,11 +6,16 @@
   <title>The Ledger — Movie Club Stats</title>
   <style>
     html, body { margin: 0; padding: 0; background: #0B0C10; }
-    #root { max-width: 980px; margin: 0 auto; padding: 24px 12px; }
-    @media (min-width: 640px) { #root { padding: 40px 20px; } }
+    #root { max-width: 980px; margin: 0 auto; padding: 12px 12px 24px; }
+    @media (min-width: 640px) { #root { padding: 16px 20px 40px; } }
+    .site-nav { max-width: 980px; margin: 0 auto; padding: 16px 12px 0; display: flex; justify-content: flex-end; }
+    @media (min-width: 640px) { .site-nav { padding: 24px 20px 0; } }
+    .site-nav a { font: 500 12px/1.6 'JetBrains Mono', ui-monospace, Consolas, monospace; letter-spacing: .12em; text-transform: uppercase; color: #E3B23C; text-decoration: none; }
+    .site-nav a:hover, .site-nav a:focus-visible { color: #EDEAE1; text-decoration: underline; text-underline-offset: 3px; }
   </style>
 </head>
 <body>
+  <nav class="site-nav" aria-label="Site"><a href="./recs.html">What to watch next &rarr;</a></nav>
   <div id="root"></div>
   <script src="./bundle.js"></script>
 </body>
